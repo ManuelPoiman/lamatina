@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>La Matina | Tienda online</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+    <header>
+        <img src="imagenes/gallo.png" alt="Logo de la tienda" class="logo">
+
+        <h1>La Matina </h1>
+       
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>    
+
+    <section id="contacto">
+        <h2>CONTACTO</h2>
+        <p>Seguinos en nuestras redes sociales:</p>
+        
+        <ul id="sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram.png"></a></li>
+            <li><a href="https://twitter.com/home?lang=es" target="_blank"><img src="imagenes/twitter.png"></a></li>
+            <li><a href="https://youtube.com" target="_blank"><img src="imagenes/youtube.png"></a></li>
+        </ul>
+
+    
+        <p>Envíanos un correo a: <a href="mailto:info@tiendademates.com">lamatina@store.com.ar</a></p>
+        <p>Comunicate por teléfono al: <a href="tel:+54945842196">+549 45842196</a></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9926695397544!2d-58.39857512387881!3d-34.60434687295404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaea670d4e67%3A0x2198c954311ad6d9!2sDa%20Vinci%20%7C%20Primera%20Escuela%20de%20Arte%20Multimedial!5e0!3m2!1ses!2sar!4v1701649567384!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Av. Corrientes 2037. CABA.</p>
+       
+   
+    </section>
+
+    <footer>
+        <p>&copy; 2023 La Matina | Todos los derechos reservados.</p>
+    </footer>
+
+    <button class="ir-arriba" onclick="irArriba()">Ir Arriba</button>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('.ir-arriba').style.display = "block";
+            } else {
+                document.querySelector('.ir-arriba').style.display = "none";
+            }
+        }
+
+        function irArriba() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</div>
+
+</body>
+</html>

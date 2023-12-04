@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>La Matina | Tienda online</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+    <header>
+        <img src="imagenes/gallo.png" alt="Logo de la tienda" class="logo">
+
+        <h1>La Matina </h1>
+       
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#sobre-nosotros.html">Sobre nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    
+
+    <section id="sobre-nosotros">
+
+        <div>
+            <h2>QUIÉNES SOMOS</h2>
+            <p><strong>Somos una empresa que vino a cambiarlo todo!</strong> <br>Nuestro compromiso con nuestros clientes y el medio ambiente nos diferencia de los demás, <br> esto se refleja en nuestros productos reciclables y orgánicos que reducen drásticamente <br> el impacto ambiental. <br> <br> <strong>COMPROMISO - CALIDAD - GARANTÍA DE POR VIDA.</strong> <br> <br>atte: El equipo La Matina! ;) </p>
+        </div>
+        <img src="imagenes/Imagen-sobre-nosotros-gente-tomando-mate.png" alt="Nosotros">
+      
+    </section>
+
+
+
+    <section id="sobre-nosotros">
+
+        <div>
+            <h2>NUESTRA MISIÓN</h2>
+            <p>Nuestra misión es ser tu aliado en este viaje, proporcionándote no solo productos de calidad excepcional, sino también el conocimiento <br> y la pasión que respaldan cada uno de nuestros mates. Nos esforzamos por crear un espacio donde los amantes del mate encuentren <br> todo lo que necesitan para disfrutar plenamente de esta tradición centenaria. <br>
+                <br>
+             Nos enorgullece ser portadores de una cultura rica y apasionante que se remonta a generaciones, y nuestro compromiso <br> es ofrecerte lo mejor de esta tradición en cada mate que adquieras. <br> <br>
+
+            <br><strong>¡Gracias por unirte a nosotros en esta emocionante travesía de sabores, cultura y conexión!</strong> </p>
+        </div>
+        <img src="imagenes/nuestra-mision.png" alt="Nosotros">
+      
+    </section>
+
+
+
+    <section id="sobre-nosotros">
+
+        <div>
+            <h2>NUESTRA VISIÓN</h2>
+            <p> En La Matina, nuestra visión es trascender más allá de ser simplemente una tienda de mates; aspiramos a ser la inspiración detrás <br> de cada encuentro significativo, fortaleciendo conexiones a través de la pasión compartida por esta antigua tradición. <br>
+
+                Visualizamos un mundo donde cada sorbo de mate es un momento de contemplación, un puente entre culturas <br> y un catalizador para crear recuerdos duraderos. Nos esforzamos por ser reconocidos como la fuente confiable <br> y respetada que guía a los amantes del mate en su búsqueda de calidad, autenticidad y diversidad. <br>
+                
+                Buscamos expandir nuestra presencia no solo como una tienda, sino como una plataforma que celebra la diversidad de tradiciones <br> de mate en todo el mundo. Imaginamos un espacio en el que las historias de los productores, la riqueza de las comunidades locales <br> y la belleza de los rituales del mate se entrelacen, creando una red global de aprecio y respeto mutuo.
+            </p>
+        </div>
+        <img src="imagenes/nuestra-vision.png" alt="Nosotros">
+      
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2023 La Matina | Todos los derechos reservados.</p>
+    </footer>
+
+    <button class="ir-arriba" onclick="irArriba()">Ir Arriba</button>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('.ir-arriba').style.display = "block";
+            } else {
+                document.querySelector('.ir-arriba').style.display = "none";
+            }
+        }
+
+        function irArriba() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>La Matina | Tienda online</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+    <header>
+        <img src="imagenes/gallo.png" alt="Logo de la tienda" class="logo">
+
+        <h1>La Matina </h1>
+       
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="#productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section id="productos">
+        <h2>NUESTROS PRODUCTOS</h2>
+        <h3>Últimas novedades.</h3>
+        <h4><p>Descubre la mejor selección de mates y termos para disfrutar de tus infusiones favoritas.</p></h4>
+        <div class="productos">
+            <img src="imagenes/mate-bombilla.png" alt="Producto 1">
+            <p>Mate+Bombilla <strong>$14.000</strong></p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="productos">
+            <img src="imagenes/set-de-mate.png" alt="Producto 2">
+            <p>Combo matero <strong>$29.999</strong></p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="productos">
+            <img src="imagenes/Yerba.png" alt="Producto 3">
+            <p>Yerba orgánica <strong>$2.550</strong></p>
+            <button class="boton-comprar">Comprar</button> 
+        </div> <br> <br> 
+
+        <div class="productos">
+            <button class="boton-ver-mas">Ver Más Productos</button>
+        </div>
+
+
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 La Matina | Todos los derechos reservados.</p>
+    </footer>
+
+    <button class="ir-arriba" onclick="irArriba()">Ir Arriba</button>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('.ir-arriba').style.display = "block";
+            } else {
+                document.querySelector('.ir-arriba').style.display = "none";
+            }
+        }
+
+        function irArriba() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</div>
+
+</body>
+</html>
